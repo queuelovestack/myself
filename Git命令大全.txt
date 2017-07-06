@@ -1,0 +1,17 @@
+git add filename → eg. git add test.txt 将文件添加至缓存区 git add → git commit
+git rm filename → eg. git rm test.txt 从版本库中删除文件 git rm → git commit
+git commit -m "remark" → eg. git commit -m "添加了一个test.txt文件"
+git status 查看当前仓库状态
+git diff filename 查看文件与之前有什么不同
+git log 仓库操作日志
+git log --pretty=oneline 将仓库操作一行显示
+git reset --hard parameter(HEAD HEAD^ HEAD^^ …… HEAD~100[回退100个版本] ……) 回退操作
+git reset --hard commit_id(不必完整,能区分版本即可) 回退操作
+git reflog 查看命令历史
+git checkout -- filename → eg. git checkout -- test.txt 丢弃某文件在工作区的修改或删除,回到最近一次git commit或git add时的状态
+git reset HEAD filename 把暂存区的修改撤销掉(unstage),重新放回工作区
+git clone SSH[路径] 克隆远程库
+git remote add origin SSH[路径] 本地关联远程库
+git push -u origin master 推送本地库内容至远程库[首次]
+由于远程库是空的,我们第一次推送master分支时,加上了-u参数,Git不但会把本地的master分支内容推送到远程新的master分支,还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+git push origin master 推送本地库内容至远程库
