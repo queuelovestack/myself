@@ -15,3 +15,8 @@ git remote add origin SSH[路径] 本地关联远程库
 git push -u origin master 推送本地库内容至远程库[首次]
 由于远程库是空的,我们第一次推送master分支时,加上了-u参数,Git不但会把本地的master分支内容推送到远程新的master分支,还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
 git push origin master 推送本地库内容至远程库
+ssh-keygen -t rsa -C "youremail@example.com" 在用户主目录下生成包含id_rsa和id_rsa.pub两个文件的.ssh目录 id_rsa是私钥 id_rsa.pub是公钥
+git branch 查看已有分支,当前分支前面会标注*号
+git checkout -b dev ≡ git branch dev(创建) + git checkout dev(切换) 创建dev分支并切换至dev分支
+git merge dev 合并指定分支(此时指dev分支)到当前分支
+git branch -d dev 删除dev分支
