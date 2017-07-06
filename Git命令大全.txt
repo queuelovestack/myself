@@ -1,3 +1,6 @@
+简单的Git命令,细节查看廖雪峰官方网站
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+
 git add filename → eg. git add test.txt 将文件添加至缓存区 git add → git commit
 git rm filename → eg. git rm test.txt 从版本库中删除文件 git rm → git commit
 git commit -m "remark" → eg. git commit -m "添加了一个test.txt文件"
@@ -20,3 +23,8 @@ git branch 查看已有分支,当前分支前面会标注*号
 git checkout -b dev ≡ git branch dev(创建) + git checkout dev(切换) 创建dev分支并切换至dev分支
 git merge dev 合并指定分支(此时指dev分支)到当前分支
 git branch -d dev 删除dev分支
+
+当Git无法自动合并分支时,就必须首先解决冲突。解决冲突后,再提交,合并完成
+
+git log --graph 查看分支合并图 亦可加参数简化图结构 eg. git log --graph --pretty=oneline --abbrev-commit
+git merge --no-ff -m "remark" dev 以--no-ff方式合并分支,禁用Fast forward
