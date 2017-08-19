@@ -12,6 +12,7 @@ git reset --hard parameter(HEAD HEAD^ HEAD^^ …… HEAD~100[回退100个版本] ……) 
 git reset --hard commit_id(不必完整,能区分版本即可) 回退操作
 git reflog 查看命令历史
 git checkout -- filename → eg. git checkout -- test.txt 丢弃某文件在工作区的修改或删除,回到最近一次git commit或git add时的状态
+git checkout . 清除工作区所有还没有add的文件的修改
 git reset HEAD filename 把暂存区的修改撤销掉(unstage),重新放回工作区
 git clone SSH[路径] 克隆远程库
 git remote add origin SSH[路径] 本地关联远程库
