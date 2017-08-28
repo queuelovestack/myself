@@ -15,6 +15,7 @@ git checkout -- filename ¡ú eg. git checkout -- test.txt ¶ªÆúÄ³ÎÄ¼şÔÚ¹¤×÷ÇøµÄĞŞ¸
 git checkout . Çå³ı¹¤×÷ÇøËùÓĞ»¹Ã»ÓĞaddµÄÎÄ¼şµÄĞŞ¸Ä
 git reset HEAD filename °ÑÔİ´æÇøµÄĞŞ¸Ä³·Ïúµô(unstage),ÖØĞÂ·Å»Ø¹¤×÷Çø
 git clone SSH[Â·¾¶] ¿ËÂ¡Ô¶³Ì¿â
+git clone -b <branch> SSH[Â·¾¶]	¿ËÂ¡Ô¶³Ì¿âµÄÄ³¸ö·ÖÖ§
 git remote add origin SSH[Â·¾¶] ±¾µØ¹ØÁªÔ¶³Ì¿â
 git push -u origin master ÍÆËÍ±¾µØ¿âÄÚÈİÖÁÔ¶³Ì¿â[Ê×´Î]
 ÓÉÓÚÔ¶³Ì¿âÊÇ¿ÕµÄ,ÎÒÃÇµÚÒ»´ÎÍÆËÍmaster·ÖÖ§Ê±,¼ÓÉÏÁË-u²ÎÊı,Git²»µ«»á°Ñ±¾µØµÄmaster·ÖÖ§ÄÚÈİÍÆËÍµ½Ô¶³ÌĞÂµÄmaster·ÖÖ§,»¹»á°Ñ±¾µØµÄmaster·ÖÖ§ºÍÔ¶³ÌµÄmaster·ÖÖ§¹ØÁªÆğÀ´£¬ÔÚÒÔºóµÄÍÆËÍ»òÕßÀ­È¡Ê±¾Í¿ÉÒÔ¼ò»¯ÃüÁî
